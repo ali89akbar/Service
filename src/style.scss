@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F0EA;
+    color: #2D232E;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    .Wrapper{
+        padding-left: 5rem;
+        height: 100%;
+        width: 100%;
+
+        section{
+            height: 100vh;
+            width: 100vw;
+        }
+        #Mainsection{
+            margin-top: 60px;
+            .Main{
+                .firstTag{
+                    font-size: 80px;
+                    font-weight:700;
+                    animation-name: firsTaganimation;
+                    animation-duration: 2s;
+                    animation-delay: .4s;
+        
+                }
+                .firstTag-sub{
+                    font-size: 30px;
+                    font-weight: 300;
+                    max-width: 40%;
+                }
+                .ImageSection{
+                        max-width: 80;
+                img{
+                        width: 500px;
+                        height: 700px;
+                        display: flex;
+                        animation-name: Imageanimation;
+                        animation-duration:2s;
+                        animation-delay: .4s;
+                        margin-left: 57%;
+                        margin-top: -38%;
+                        box-shadow: 14px 18px 8px;
+                    }
+        
+                }
+            }
+            }
+            @keyframes firsTaganimation{
+                from{
+                    margin-left: -15%;
+                    opacity: 0;
+                }
+                to{
+                    margin-left: 0px;
+                    opacity: 1;
+                }
+            }
+            @keyframes Imageanimation{
+                from{
+                    margin-left: 100%;
+                    opacity: 0;
+                }
+                to{
+                    margin-left: 57%;
+                    opacity: 1;
+                }
+            }
+            #ProjectSection{
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                .Container{
+                    width: 100%;
+                    height: 100%;
+                    scroll-snap-type: y mandatory;
+                    overflow-y: scroll;
+                    
+                }
+                section{
+                    display: flex;
+                    
+                    align-items: center;
+                    height: 100vh;
+                    width: 100%;
+                    scroll-snap-align: start;
+                    h1{
+                        font-size: 10em;
+                        font-weight: 400;
+                        
+                    }
+                    
+                    .Navigation-text{
+                        
+                        cursor: pointer;
+                        padding: 5rem;
+                    }
+                }
+                
+            }
+
+            #AboutSection{
+                height: 100vh;
+                width: 90vw;
+                overflow: hidden;
+                
+                .TextContainer{
+                    display: flex;
+                    padding: 9rem;
+                    gap: 600px;
+
+                    #About-heading{
+                        font-size: 80px;
+                    }
+                    .AboutTextSection{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                    }
+                    img{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                    }
+
+                    .AboutText{
+                        max-width: 70%;
+                        
+                    }
+
+
+                    .Authors{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 140px;
+                        
+                    }
+                }
+            }
+
+
+            #ContactSection{
+                height: 250vh;
+                .HeaderContact{
+                        padding: 3rem;
+                    .contactHeader{
+                        
+                        font-size: 80px;
+
+                    }
+                    .HeaderContent{
+                        padding: 8rem ;
+                        padding-left: 15rem;
+                        .startContact{
+                            max-width: 65%;
+                            font-size: 120px;
+                            font-weight: 400;
+                        }
+                        .startText{
+                            padding: 4rem 0 0;
+                            max-width: 50%;
+                            text-indent: 14vw;
+                            
+                            font-size: 20px;
+                            
+                        }
+                    }
+
+                    .detailPart{
+                        padding-top: 75rem;
+                        font-size: 18px;
+                        font-weight: 300;
+                        .mailContact{
+                            font-weight: 500;
+                        }
+                    }
+
+                    .ContactForm{
+                        position: absolute;
+                        max-width: 600px;
+                        margin: 0 auto;
+                        padding-left: 15rem ;
+                        
+                        label{
+                            font-size: 20px;
+                            
+                            display: block;
+                            padding: .5rem;
+                        }
+
+                        input{
+                            background-color: transparent;
+                            width: 100%;
+                            padding: 6px 10px;
+                            margin: 10px 0;
+                            border:none;
+                            box-sizing: border-box;
+                            display: block;
+                            line-height: 1.2333333vw;
+                            text-align: left;
+                            font-size: 25px;
+                            font-weight: 300;
+                            opacity: .6;
+                            &:focus{
+                                
+                                appearance: none;
+                                outline: 0;
+                                border: 0;
+                            }
+                        }
+                        .line{
+                            margin-bottom: 2rem;
+                            height: 2px;
+                            width: 250%;
+                            background-color: black;
+                            
+                        }
+                    }
+                }
+            }
+
+// .sticky_parent{
+//     height: 500vh;
+// }
+// .sticky{
+//     overflow: hidden;
+//     position: sticky;
+//     top: 0;
+//     height: 100vh;
+//     border: 1px solid red;
+// }
+
+// .scroll_section{
+//     position: absolute;
+//     top: 0;
+//     height: 100%;
+//     width: 500vw;
+//     will-change: transform;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0 5vw;
+// }
+// .Projects{
+//     .pfirstTag{
+//         margin-top: 60px;
+//         font-size: 80px;
+//         font-weight: 700;
+//     }
+//     .pfirstTag-p{
+//         font-size: 27px;
+//         width: 40%;
+//     }
+// }
+
+}
+}
