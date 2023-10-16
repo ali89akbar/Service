@@ -1,0 +1,79 @@
+.container {
+    align-items: center;
+    background-color: #f1f0eb; /* Set the initial background color */
+  }
+  .hn{
+    font-size: 39px;
+  }
+  .box {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    display: inline-flex;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflowing content during animation */
+    animation: slideDown 1900ms ease-in-out forwards; /* Apply the keyframe animation on hover */
+    
+  }
+  .boxs{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    cursor: pointer;
+  }
+  .bo{
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+
+  }
+  .bo:hover,.as:hover,.ad:hover{
+    animation-name: animate__backInDown;
+    animation-duration: 1s;
+  }
+  @keyframes animate__backInDown {
+    from {
+        margin-top: -15%;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+  .box{
+    animation-name: animate__fadeInLeft;
+    animation-duration: 2s;
+    justify-content: space-between;
+  }
+  @keyframes animate__fadeInLeft {
+    from {
+        margin-left: -55%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+  .bo, .bx:hover  {
+    animation: popup 1s ease-in-out; /* Start the animation on hover */
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 15px;
+  }
+  
+
+@media screen and (max-width: 760px){
+  body{
+    width: 100%;
+
+  }
+  .container{
+    width: 100%;
+  }
+}
+
+  

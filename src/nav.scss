@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar-main {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F0EA;
+}
+
+.Navbar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55rem; /* Adjusted padding for better alignment */
+    animation-name: navAnimation;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+}
+
+.Navlist {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navlist a {
+    text-decoration: none;
+}
+
+.ull {
+    padding: 10px 15px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 600;
+    color: #2D232E;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ull:hover {
+    transform: translateY(-3px);
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+@keyframes navAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
